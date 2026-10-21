@@ -1,0 +1,494 @@
+=====================================================================
+           P22. HABIT TRACKER - SAMPLE EXECUTION LOG
+=====================================================================
+
+>>> TEST 1: FIRST RUN WITH NO DATA FILES
+(Removing habits.txt and log.txt to simulate fresh installation)
+
+=======================================================
+             P22. HABIT TRACKER
+=======================================================
+Welcome to your personal habit tracking assistant.
+Enter today's date (DD-MM-YYYY): Error: Invalid date format or date does not exist. Please use DD-MM-YYYY.
+Enter today's date (DD-MM-YYYY): Error: Invalid date format or date does not exist. Please use DD-MM-YYYY.
+Enter today's date (DD-MM-YYYY): Error: Invalid date format or date does not exist. Please use DD-MM-YYYY.
+Enter today's date (DD-MM-YYYY): Data loaded successfully. 0 habit(s), 0 log(s).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): Error: Invalid number. Please enter digits only.
+Enter your choice (1-8): Error: Please enter a number between 1 and 8.
+Enter your choice (1-8): Error: Input cannot be empty. Please enter a number.
+Enter your choice (1-8): 
+--- Habit Streaks & Milestone Badges ---
+No habits found.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Add a New Habit ---
+Enter habit name: Error: Input cannot be empty. Please try again.
+Enter habit name: Error: The character '|' is not allowed. Please try again.
+Enter habit name: Enter weekly target (1 to 7 days): Error: Invalid number. Please enter digits only.
+Enter weekly target (1 to 7 days): Error: Please enter a number between 1 and 7.
+Enter weekly target (1 to 7 days): Success: Added 'Morning Jog' as H1 (Target: 5 days/week).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Mark a Habit Done ---
+  [H1] Morning Jog (ACTIVE)
+Enter Habit ID: Enter date (DD-MM-YYYY) [press Enter for today: 21-10-2026]: Success: Marked habit H1 (Morning Jog) done for 21-10-2026!
+Current streak for H1: 1 day(s).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Habit Streaks & Milestone Badges ---
+ID   Habit Name          Current     Longest     Badges
+-----------------------------------------------------------------
+H1   Morning Jog         1 days      1 days      None
+-----------------------------------------------------------------
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+Thank you for using Habit Tracker. Goodbye!
+
+
+[Test 1 Result] Verified: Program started empty, rejected bad inputs, created files, saved H1, and exited cleanly.
+
+=====================================================================
+>>> TEST 2: COMPREHENSIVE RUN WITH COMPLETE SAMPLE DATASET
+(Loading 10 habits and 110 logs to test all streak boundaries & features)
+
+=======================================================
+             P22. HABIT TRACKER
+=======================================================
+Welcome to your personal habit tracking assistant.
+Enter today's date (DD-MM-YYYY): Data loaded successfully. 10 habit(s), 110 log(s).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Habit Streaks & Milestone Badges ---
+ID   Habit Name          Current     Longest     Badges
+-----------------------------------------------------------------
+H1   Morning walk        24 days     24 days     7-Day Bronze, 21-Day Silver
+H2   Read book           52 days     52 days     7-Day Bronze, 21-Day Silver, 50-Day Gold
+H3   Drink water         3 days      9 days      7-Day Bronze
+H4   Coding practice     2 days      7 days      7-Day Bronze
+H5   Meditation          0 days      3 days      None
+H6   Gym workout         0 days      3 days      None
+H7   Guitar practice     0 days      2 days      None
+H8   Journaling          3 days      3 days      None
+H9   Healthy diet        1 days      1 days      None
+H10  Learn Spanish       0 days      0 days      None
+-----------------------------------------------------------------
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Weekly Habit Grid ---
+Enter date in week (DD-MM-YYYY) [press Enter for today: 21-10-2026]: Week 19-10-2026 to 25-10-2026
+Habit           Mon Tue Wed Thu Fri Sat Sun   Done/Target
+Morning walk     Y   Y   Y   -   -   -   -    3/5
+Read book        Y   Y   Y   -   -   -   -    3/7
+Drink water      Y   Y   Y   -   -   -   -    3/7
+Coding practice  Y   Y   -   -   -   -   -    2/5
+Meditation       -   -   -   -   -   -   -    0/6
+Gym workout      -   -   -   -   -   -   -    0/4
+Guitar practice  -   -   -   -   -   -   -    0/3
+Journaling       Y   Y   Y   -   -   -   -    3/7
+Healthy diet     Y   -   Y   -   -   -   -    2/6
+Learn Spanish    -   -   -   -   -   -   -    0/5
+
+[Bonus] Saved weekly report to weekly_report.txt
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- 30-Day Completion Percentage ---
+Window: 22-09-2026 to 21-10-2026 (30 days)
+ID   Habit Name          Status     Done/Total   Percentage
+--------------------------------------------------------------
+H1   Morning walk        ACTIVE     24/30             80.0%
+H2   Read book           ACTIVE     30/30            100.0%
+H3   Drink water         ACTIVE     3/30              10.0%
+H4   Coding practice     ACTIVE     2/30               6.7%
+H5   Meditation          ACTIVE     3/30              10.0%
+H6   Gym workout         PAUSED     3/30              10.0%
+H7   Guitar practice     PAUSED     0/30               0.0%
+H8   Journaling          ACTIVE     3/30              10.0%
+H9   Healthy diet        ACTIVE     2/30               6.7%
+H10  Learn Spanish       ACTIVE     0/30               0.0%
+--------------------------------------------------------------
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Overdue Habits (Active Habits Not Done for 3+ Days) ---
+  [H5] Meditation - Last done on 15-10-2026 (6 days ago)
+  [H10] Learn Spanish - Never done yet! (Target: 5 days/week)
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Mark a Habit Done ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (ACTIVE)
+  [H10] Learn Spanish (ACTIVE)
+Enter Habit ID: Error: Cannot mark a PAUSED habit done. Please resume it first.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Mark a Habit Done ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (ACTIVE)
+  [H10] Learn Spanish (ACTIVE)
+Enter Habit ID: Enter date (DD-MM-YYYY) [press Enter for today: 21-10-2026]: Success: Marked habit H4 (Coding practice) done for 21-10-2026!
+Current streak for H4: 3 day(s).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Mark a Habit Done ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (ACTIVE)
+  [H10] Learn Spanish (ACTIVE)
+Enter Habit ID: Enter date (DD-MM-YYYY) [press Enter for today: 21-10-2026]: Notice: Habit H4 is already marked done on 21-10-2026.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Add a New Habit ---
+Enter habit name: Enter weekly target (1 to 7 days): Success: Added 'Evening Yoga' as H11 (Target: 4 days/week).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Pause / Resume / Delete a Habit ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (ACTIVE)
+  [H10] Learn Spanish (ACTIVE)
+  [H11] Evening Yoga (ACTIVE)
+Actions: 1. Pause | 2. Resume | 3. Delete | 4. Back
+Enter choice (1-4): Enter Habit ID: Success: Habit H9 is now PAUSED.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Pause / Resume / Delete a Habit ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (PAUSED)
+  [H10] Learn Spanish (ACTIVE)
+  [H11] Evening Yoga (ACTIVE)
+Actions: 1. Pause | 2. Resume | 3. Delete | 4. Back
+Enter choice (1-4): Enter Habit ID: Success: Habit H9 is now ACTIVE.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Pause / Resume / Delete a Habit ---
+  [H1] Morning walk (ACTIVE)
+  [H2] Read book (ACTIVE)
+  [H3] Drink water (ACTIVE)
+  [H4] Coding practice (ACTIVE)
+  [H5] Meditation (ACTIVE)
+  [H6] Gym workout (PAUSED)
+  [H7] Guitar practice (PAUSED)
+  [H8] Journaling (ACTIVE)
+  [H9] Healthy diet (ACTIVE)
+  [H10] Learn Spanish (ACTIVE)
+  [H11] Evening Yoga (ACTIVE)
+Actions: 1. Pause | 2. Resume | 3. Delete | 4. Back
+Enter choice (1-4): Enter Habit ID: Delete habit H11 and all its logs? (y/n): Success: Deleted habit H11 and all its log records.
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+Thank you for using Habit Tracker. Goodbye!
+
+
+[Test 2 Result] Verified: All 7 features and bonus items tested and working as expected.
+
+=====================================================================
+>>> TEST 3: CLOSE AND REOPEN TO VERIFY DATA PERSISTENCE
+=====================================================================
+
+=======================================================
+             P22. HABIT TRACKER
+=======================================================
+Welcome to your personal habit tracking assistant.
+Enter today's date (DD-MM-YYYY): Data loaded successfully. 10 habit(s), 111 log(s).
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+--- Habit Streaks & Milestone Badges ---
+ID   Habit Name          Current     Longest     Badges
+-----------------------------------------------------------------
+H1   Morning walk        24 days     24 days     7-Day Bronze, 21-Day Silver
+H2   Read book           52 days     52 days     7-Day Bronze, 21-Day Silver, 50-Day Gold
+H3   Drink water         3 days      9 days      7-Day Bronze
+H4   Coding practice     3 days      7 days      7-Day Bronze
+H5   Meditation          0 days      3 days      None
+H6   Gym workout         0 days      3 days      None
+H7   Guitar practice     0 days      2 days      None
+H8   Journaling          3 days      3 days      None
+H9   Healthy diet        1 days      1 days      None
+H10  Learn Spanish       0 days      0 days      None
+-----------------------------------------------------------------
+
+=======================================================
+                 MAIN MENU
+=======================================================
+Today's Date: 21-10-2026
+1. Add a habit
+2. Pause / resume or delete a habit
+3. Mark a habit done for a date
+4. View streaks and badges
+5. View weekly grid
+6. View 30-day completion percentage
+7. View overdue habits (3+ days inactive)
+8. Exit
+=======================================================
+Enter your choice (1-8): 
+Thank you for using Habit Tracker. Goodbye!
+
+
+[Test 3 Result] Verified: All additions, log updates, and deletions persisted correctly to disk.

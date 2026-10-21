@@ -1,0 +1,10 @@
+H1|Morning walk|5|ACTIVE
+H2|Read book|7|ACTIVE
+H3|Drink water|7|ACTIVE
+H4|Coding practice|5|ACTIVE
+H5|Meditation|6|ACTIVE
+H6|Gym workout|4|PAUSED
+H7|Guitar practice|3|PAUSED
+H8|Journaling|7|ACTIVE
+H9|Healthy diet|6|ACTIVE
+H10|Learn Spanish|5|ACTIVE
